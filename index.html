@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Gradient Tool</title>
+    <link rel="stylesheet" href="gradient-styles.css">
+  </head>
+  <body>
+    <h1>Gradients are dope</h1>
+    <div class="gradient-selection">
+      <label for="hex-1">Select first color. Currently: <span id="hex-1-display"></span></label>
+      <input type="color" class="gradient-selection__picker" name="hex-1" id="hex-1" value="#B118C8">
+    </div>
+    <div class="gradient-selection">
+      <label for="hex-2">Select second color. Currently: <span id="hex-2-display"></span></label>
+      <input type="color" class="gradient-selection__picker" name="hex-2" id="hex-2" value="#63D2FF">
+    </div>
+    <div class="gradient-preview"></div>
+
+    <script type="text/javascript" src="gradient.js"></script>
+  </body>
+</html>
