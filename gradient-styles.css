@@ -1,17 +1,25 @@
 body {
-  margin: 0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
 }
 
 h1 {
-  color: pink;
+  font-weight: 400;
 }
 
-.gradient-selector__picker {
+.gradient-settings {
+  padding: 20px;
+}
+
+.gradient-settings__picker {
   height: 50px;
+  border: none;
 }
 
 .gradient-preview {
   width: 100%;
-  height: 300px;
-  background: linear-gradient(90deg, #B118C8 35%, #63D2FF 100%);
+  height: 200px;
+  background-color: blue;
 }
+
+  /* background: linear-gradient(90deg, #B118C8 35%, #63D2FF 100%); */

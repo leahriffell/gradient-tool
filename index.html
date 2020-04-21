@@ -4,18 +4,23 @@
     <meta charset="utf-8">
     <title>Gradient Tool</title>
     <link rel="stylesheet" href="gradient-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
   </head>
   <body>
     <h1>Gradients are dope</h1>
-    <div class="gradient-selection">
-      <label for="hex-1">Select first color. Currently: <span id="hex-1-display"></span></label>
-      <input type="color" class="gradient-selection__picker" name="hex-1" id="hex-1" value="#B118C8">
+    <div class="gradient-settings">
+      <h2>Select your gradient colors:</h2>
+      <div class="gradient-settings__color-selection">
+        <label for="hex-1">Select first color. Currently: <span class ="hex-display" id="hex-1-display"></span></label>
+        <input type="color" class="gradient-settings__picker" name="hex-1" id="hex-1">
+      </div>
+      <div class="gradient-settings__color-selection">
+        <label for="hex-2">Select second color. Currently: <span class ="hex-display" id="hex-2-display"></span></label>
+        <input type="color" class="gradient-settings__picker" name="hex-2" id="hex-2">
+      </div>
     </div>
-    <div class="gradient-selection">
-      <label for="hex-2">Select second color. Currently: <span id="hex-2-display"></span></label>
-      <input type="color" class="gradient-selection__picker" name="hex-2" id="hex-2" value="#63D2FF">
-    </div>
-    <div class="gradient-preview"></div>
+    <h2>Gradient Preview:</h2>
+    <div class="gradient-preview" name="gradient-preview"></div>
 
     <script type="text/javascript" src="gradient.js"></script>
   </body>
